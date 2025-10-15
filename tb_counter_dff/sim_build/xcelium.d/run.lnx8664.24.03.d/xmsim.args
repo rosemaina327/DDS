@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-amsdlibdir
+sim_build/xcelium.d/AMSD
+-INPUT
+/home/rmaina/dds25-students/digital/tb_common/probes.tcl
+-LICQUEUE
+-PLINOWARN
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1759737766
+-XLKEEP
+-XLMODE
+sim_build/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-CDSLIB
+sim_build/xcelium.d/run.lnx8664.24.03.d/cds.lib
+-HDLVAR
+sim_build/xcelium.d/run.lnx8664.24.03.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	24.03-s004"

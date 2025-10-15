@@ -1,0 +1,218 @@
+# SimVision Command Script (Fri Aug 18 17:07:57 CEST 2023)
+#
+# Version 22.03.s005
+#
+# You can restore this configuration with:
+#
+#      xrun -timescale 1ns/1ps -f /home/rleys/git/adl/icflow/packages/hdl_rfg_v1/verification/spi_framed_readout/spi_framed_readout.sim.f -debug_opts indago_pp -loadvpi /home/rleys/git/adl/icflow/packages/hdl_rfg_v1/verification/spi_framed_readout/.icflow/sim/.venv/lib/python3.10/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap -access +rwc -createdebugdb -s -input /home/rleys/git/adl/icflow/packages/hdl_rfg_v1/verification/spi_framed_readout/restore.tcl
+#
+
+
+#
+# Preferences
+#
+preferences set plugin-enable-svdatabrowser-new 1
+preferences set toolbar-sendToIndago-WaveWindow {
+  usual
+  position -pos 3
+}
+preferences set toolbar-Standard-Console {
+  usual
+  position -pos 1
+}
+preferences set toolbar-Search-Console {
+  usual
+  position -pos 2
+}
+preferences set toolbar-txe_waveform_toggle-WaveWindow {
+  usual
+  position -pos 1
+}
+preferences set plugin-enable-groupscope 0
+preferences set plugin-enable-interleaveandcompare 0
+preferences set plugin-enable-waveformfrequencyplot 0
+preferences set toolbar-Windows-WaveWindow {
+  usual
+  position -pos 2
+}
+
+#
+# Simulator
+#
+database require simulator -hints {
+	simulator "xrun -timescale 1ns/1ps -f /home/rleys/git/adl/icflow/packages/hdl_rfg_v1/verification/spi_framed_readout/spi_framed_readout.sim.f -gui -debug_opts indago_pp -loadvpi /home/rleys/git/adl/icflow/packages/hdl_rfg_v1/verification/spi_framed_readout/.icflow/sim/.venv/lib/python3.10/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap -access +rwc -createdebugdb -s -input restore.tcl"
+}
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 700x500+1954+57}] != ""} {
+    window geometry "Design Browser 1" 700x500+1954+57
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set \
+    -signalsort name
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1920x1009+1920+23}] != ""} {
+    window geometry "Waveform 1" 1920x1009+1920+23
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar select designbrowser
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 175 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -label IGRESS -comment {}]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.igress.m_axis_tvalid}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.igress.m_axis_tdata[7:0]}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -label DECODER -comment {}]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.aresetn}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.aclk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfp_state}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_header}]}
+	} ]]
+waveform hierarchy expand $id
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_address[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_write_value[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_write}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_read_value[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_read_valid}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.protocol.rfg_read}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.main_rfg_I.scratchpad0[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.main_rfg_I.scratchpad1[7:0]}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tdata[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tlast}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.end_of_frame}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tready}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tuser[15:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tvalid}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.s_axis_tdest[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.state}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.m_axis_tdata[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.m_axis_tready}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.m_axis_tuser[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.readout_framing.m_axis_tvalid}]}
+	} ]]
+set id [waveform add -cdivider divider]
+set id [waveform add -label EGRESS -comment {}]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.s_axis_tdata[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.s_axis_tready}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.s_axis_tuser[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.s_axis_tvalid}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.spi_clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.spi_csn}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.egress_bit_counter_last}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.egress_bit_counter[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.egress_byte[7:0]}]}
+	} ]]
+waveform hierarchy collapse $id
+set id [waveform add -signals [subst  {
+	{simulator::[format {spi_framed_readout.egress.spi_miso[0:0]}]}
+	} ]]
+
+waveform xview limits 20318001ps 20320001ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 730x250+2148+619
+
+#
+# Layout selection
+#
+

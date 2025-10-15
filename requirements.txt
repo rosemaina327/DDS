@@ -1,0 +1,5 @@
+cocotb
+pytest
+bitstring~=3.1
+PyYAML
+Deprecated

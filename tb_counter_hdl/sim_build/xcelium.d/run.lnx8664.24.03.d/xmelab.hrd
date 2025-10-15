@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/10ps
+-VHDL_TIME_PRECISION
+10ps
+-ACCESS
++rw
+
+counter
+-LOADVPI
+/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+-ACCESS
++rwc
+-CREATEDEBUGDB

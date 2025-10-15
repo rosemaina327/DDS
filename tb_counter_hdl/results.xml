@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1760378694" />
+    <testcase name="test_count_up" classname="sim_counter_hdl" file="/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/decorators.py" lineno="10" time="0.047658681869506836" sim_time_ns="345.01" ratio_time="7239.1846871607595" />
+    <testcase name="test_count_up_enable" classname="sim_counter_hdl" file="/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/decorators.py" lineno="40" time="0.011151313781738281" sim_time_ns="425.01" ratio_time="38112.9980124861" />
+  </testsuite>
+</testsuites>

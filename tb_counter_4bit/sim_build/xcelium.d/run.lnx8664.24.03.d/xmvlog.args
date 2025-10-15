@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+sim_build/xcelium.d/run.lnx8664.24.03.d
+-RUNMODE
+-amsdlibdir
+sim_build/xcelium.d/AMSD
+-XMLIBDIRPATH
+sim_build
+/home/rmaina/dds25-students/digital/rtl/counter/counter_4bit_halfadder.sv
+/home/rmaina/dds25-students/digital/rtl/counter/dff.sv
+/home/rmaina/dds25-students/digital/rtl/counter/halfadder.sv
+-CDSLIB
+sim_build/xcelium.d/run.lnx8664.24.03.d/cdsrun.lib
+-HDLVAR
+sim_build/xcelium.d/run.lnx8664.24.03.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+sim_build/xcelium.d/run.lnx8664.24.03.d/xllibs
+-ALLOWUNBOUND
+-hastop

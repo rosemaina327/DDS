@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1759737444" />
+    <testcase name="test_truth_table" classname="sim_halfadder" file="/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/decorators.py" lineno="9" time="0.14353561401367188" sim_time_ns="403.01" ratio_time="2807.7352284263957" />
+  </testsuite>
+</testsuites>

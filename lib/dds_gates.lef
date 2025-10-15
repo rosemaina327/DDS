@@ -1,0 +1,87 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO CatenaDesignType STRING ;
+END PROPERTYDEFINITIONS
+
+MACRO TGATE
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN TGATE 0 0 ;
+  SIZE 2.85 BY 1.8 ;
+  SYMMETRY X Y ;
+  SITE CORE ;
+  PIN Z
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER ME1 ;
+        RECT 1.01 1.36 2.32 1.46 ;
+        RECT 2.17 0.29 2.32 1.46 ;
+        RECT 1.01 0.29 2.32 0.38 ;
+        RECT 1.01 1.345 2.01 1.46 ;
+        RECT 1.01 0.29 2.01 0.385 ;
+    END
+  END Z
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER ME1 ;
+        RECT 0 1.65 2.85 1.95 ;
+        RECT 2.465 1.1 2.635 1.95 ;
+        RECT 0.1 1.035 0.24 1.95 ;
+    END
+  END VDD
+  PIN GND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER ME1 ;
+        RECT 0 -0.15 2.85 0.15 ;
+        RECT 2.465 -0.15 2.635 0.53 ;
+        RECT 0.1 -0.15 0.24 0.58 ;
+    END
+  END GND
+  PIN EN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER ME2 ;
+        RECT 0.05 0.69 0.86 0.91 ;
+      LAYER ME1 ;
+        RECT 0.66 0.38 0.86 0.91 ;
+        RECT 0.05 0.69 0.35 0.91 ;
+    END
+  END EN
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER ME1 ;
+        RECT 1.01 0.555 2.01 1.175 ;
+    END
+  END A
+  OBS
+    LAYER ME1 ;
+      RECT 0.36 1.04 0.84 1.35 ;
+      RECT 0.36 1.035 0.55 1.35 ;
+      RECT 0.44 0.44 0.55 1.35 ;
+      RECT 0.36 0.44 0.55 0.58 ;
+    LAYER ME1 SPACING 0.09 ;
+      RECT 0.41 1.04 0.84 1.48 ;
+      RECT 0.36 1.035 0.55 1.35 ;
+      RECT 0.44 0.44 0.55 1.48 ;
+      RECT 0.36 0.44 0.55 0.58 ;
+      RECT 2.49 0.7 2.85 0.93 ;
+    LAYER VI1 SPACING 0.1 ;
+      RECT 0 0 2.85 1.8 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+END TGATE
+
+END LIBRARY

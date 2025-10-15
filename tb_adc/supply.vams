@@ -1,0 +1,31 @@
+
+// These includes are Verilg AMS Standard
+// They allow the use of Analog signal types like electrical
+`include "disciplines.vams"
+`include "constants.vams"
+
+/*
+This module is not instantianted in our code, it will be at the top level next to the testbench.
+It provides nodes for vdd and gnd global wires, so that we can connect them to a power supply.
+*/
+module cds_globals ( );
+  electrical \vdd! ;
+  electrical \gnd! ;
+  ground \gnd! ;
+endmodule
+
+module supply (
+    VDD,
+    GND
+);
+    inout VDD;
+    inout GND;
+    electrical VDD;
+    electrical GND;
+    ground GND;
+
+    // Add the supply vsource here
+
+    // Add the Analog assignment connecting VDD and vdd! here
+
+endmodule

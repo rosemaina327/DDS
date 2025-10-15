@@ -1,0 +1,36 @@
+# This file is public domain, it can be freely copied without restrictions.
+# SPDX-License-Identifier: CC0-1.0
+SHELL=/bin/bash
+export BASE?=$(shell pwd)/../../
+
+# Makefile
+
+# defaults
+SIM?=xcelium
+TOPLEVEL_LANG?=verilog
+
+# TOPLEVEL is the name of the toplevel module in your Verilog or VHDL file
+TOPLEVEL?=
+
+# MODULE is the basename of the Python test file -define LFCPNX -define LFCPNX_100 -define jd5d00
+#MODULE ?= sim_fifo
+WAVES ?= 1
+USER_ARGS?=
+
+
+# DDS parameters
+DDS_EXTRA_ARGS?=
+export DDS_WAVES?=waves
+
+# Verilog and xcelium sources
+VERILOG_SOURCES?=
+GUI?=0
+TESTCASE?=
+MODULE?=$(shell echo $(basename $(wildcard sim*.py)) | tr ' ' ',')
+EXTRA_ARGS?=-access +rw -input $(BASE)/tb_common/probes.tcl $(DDS_EXTRA_ARGS)
+
+COCOTB_HDL_TIMEUNIT=1ns
+COCOTB_HDL_TIMEPRECISION=10ps
+
+# include cocotb's make rules to take care of the simulator setup
+include $(shell cocotb-config --makefiles)/Makefile.sim

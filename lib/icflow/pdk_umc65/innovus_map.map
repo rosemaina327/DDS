@@ -1,0 +1,34 @@
+##############################################################################
+#-----------------------------------------------------------------------------
+#
+# SOC Encounter GDSII Layer Map Table
+#
+#   Version: 06-Dec-2019
+#
+# Created on: Mi 29. Nov 16:04:24 CET 2023
+##############################################################################
+# layer/object-type    layer/object-type    layer-number   data-type
+# =================    =================    ============   =========
+    ME1                   NET,SPNET,VIA,PIN  46            0
+    VI1                   VIA                47            0
+    ME2                   NET,SPNET,VIA,PIN  48            0
+    VI2                   VIA                49            0
+    ME3                   NET,SPNET,VIA,PIN  50            0
+    VI3                   VIA                51            0
+    ME4                   NET,SPNET,VIA,PIN  52            0
+    VI4                   VIA                53            0
+    ME5                   NET,SPNET,VIA,PIN  54            0
+    VI5                   VIA                55            0
+    ME6                   NET,SPNET,VIA,PIN  56            0
+    VI6                   VIA                57            0
+    ME7                   NET,SPNET,VIA,PIN  58            0
+    VI7                   VIA                59            0
+    ME8                   NET,SPNET,VIA,PIN  60            0
+    NAME                  ME1/PIN            101           0
+    NAME                  ME2/PIN            102           0
+    NAME                  ME3/PIN            103           0
+    NAME                  ME4/PIN            104           0
+    NAME                  ME5/PIN            105           0
+    NAME                  ME6/PIN            106           0
+    NAME                  ME7/PIN            107           0
+    NAME                  ME8/PIN            108           0

@@ -1,0 +1,263 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Oct 06, 2025 at 09:57:21 CEST
+/eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/bin/64bit/xrun
+	-timescale 1ns/10ps
+	-vhdl_time_precision 10ps
+	-access +rw
+	-input /home/rmaina/dds25-students/digital/tb_common/probes.tcl
+	-licqueue
+	-64
+	-xmlibdirpath sim_build
+	-plinowarn
+	-top halfadder
+	-loadvpi /home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+	-access +rwc
+	-createdebugdb
+	/home/rmaina/dds25-students/digital/rtl/counter/halfadder.sv
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xrun: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+INCLUDE $AMS_DIR/cds/HK_ALL/env/cds.lib
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,29): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A4 $AMS_DIR/cds/HK_H18/TECH_H18A4AM
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,34): cds.lib Invalid environment variable ''.
+DEFINE cmhv7sf $AMS_DIR/cds/HK_H18/cmhv7sf
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,35): cds.lib Invalid environment variable ''.
+DEFINE esd7hv $AMS_DIR/cds/HK_H18/esd7hv
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,36): cds.lib Invalid environment variable ''.
+DEFINE TECH_H18A7 $AMS_DIR/cds/HK_H18/TECH_H18A7AM
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,37): cds.lib Invalid environment variable ''.
+DEFINE LEADFRAMES $AMS_DIR/cds/HK_ALL/LEADFRAMES
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,39): cds.lib Invalid environment variable ''.
+DEFINE PACKAGES $AMS_DIR/cds/HK_ALL/PACKAGES
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,40): cds.lib Invalid environment variable ''.
+DEFINE BORDERS $AMS_DIR/cds/HK_ALL/BORDERS
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,41): cds.lib Invalid environment variable ''.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,43): cds.lib Invalid environment variable ''.
+DEFINE GATES $AMS_DIR/cds/HK_H18/GATES
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,45): cds.lib Invalid environment variable ''.
+DEFINE CORELIB_HV $AMS_DIR/cds/HK_H18/CORELIB_HV
+|
+xmsim: *W,DLCVAR (/home/rmaina/cds.lib,47): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.halfadder:sv .................... Done
+xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> database -open -default $::env(DDS_WAVES)
+Created default SHM database waves
+xcelium> probe -create $::env(TOPLEVEL) -name all -depth all -all -dynamic -tasks -functions -uvm -database $::env(DDS_WAVES) -memories
+xmsim: *W,PRFRTNEV: (-FUNCTIONS) Database must be opened in -EVENT mode to capture calling scope data. Use -wave_glitch_recording with ida_database if ida_probe is being used. Set is_sequence_time option to 1 if $shm_open/$shm_probe is being used.
+xmsim: *W,MTDYNUSE: SHM probe is configured with dynamic object dumping enabled. This is likely to degrade probing performance.
+Created probe all
+xcelium> 
+xcelium> run
+Simulation complete via $finish(1) at time 403010 PS + 0
+xcelium> #if { ![info exists ::env(GUI) ]   } {
+xcelium> #    run
+xcelium> #}
+xcelium> exit
+TOOL:	xrun(64)	24.03-s004: Exiting on Oct 06, 2025 at 09:57:24 CEST  (total: 00:00:03)

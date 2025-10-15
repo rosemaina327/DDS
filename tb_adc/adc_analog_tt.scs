@@ -1,0 +1,9 @@
+//
+simulator lang=spectre
+
+global 0 vdd!
+
+
+include "umc_sim_models_tt.scs"
+
+include "adc_analog_spice_common.scs"

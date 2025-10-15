@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1759739983" />
+    <testcase name="test_count_up" classname="sim_counter_4bit" file="/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/decorators.py" lineno="10" time="0.008873939514160156" sim_time_ns="345.01" ratio_time="38879.01190327781" />
+  </testsuite>
+</testsuites>

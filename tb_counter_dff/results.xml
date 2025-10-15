@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1759737769" />
+    <testcase name="test_clk_update" classname="sim_dff" file="/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/decorators.py" lineno="9" time="0.04259324073791504" sim_time_ns="315.01" ratio_time="7395.774412619158" />
+  </testsuite>
+</testsuites>

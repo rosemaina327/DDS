@@ -1,0 +1,13 @@
+//
+simulator lang=spectre
+include "adc_spice.sp"
+amsd {
+    portmap subckt=adc_analog reffile="adc_spice.v" autobus=yes  busdelim="<>"
+    config cell=adc_analog use=spice
+    ie vsup=1.0
+}
+
+// Sim setup
+saveNodes options rawfmt=sst2 save=all
+dcDom dc dc_pivot_check=yes
+timeDom tran stop=1m errpreset=liberal  dc_pivot_check=yes

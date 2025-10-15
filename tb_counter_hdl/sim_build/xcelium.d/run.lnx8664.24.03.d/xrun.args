@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/10ps
+-vhdl_time_precision
+10ps
+-access
++rw
+-input
+/home/rmaina/dds25-students/digital/tb_common/probes.tcl
+-licqueue
+-xmlibdirpath
+sim_build
+-plinowarn
+-top
+counter
+-loadvpi
+/home/rmaina/dds25-students/digital/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_ius.so:vlog_startup_routines_bootstrap
+-access
++rwc
+-createdebugdb
+/home/rmaina/dds25-students/digital/rtl/counter/counter.sv
