@@ -6,6 +6,7 @@ The goal of this project is to learn digital design from the fundamentals (gates
 ---
 
 ##Project Structure
+```bash
 DDS/
 ├── rtl/                      # All synthesizable designs
 │   ├── basic_gates/          # AND, OR, XOR, MUX, etc.
@@ -41,7 +42,7 @@ DDS/
 │
 ├── README.md                 # Project overview
 └── LICENSE (optional)
-
+```
 
 ## ▶ How to Run Simulations
 
